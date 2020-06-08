@@ -1,0 +1,18 @@
+from rand import randrange
+class MSDie:
+    def __init__(self, sides):
+        self.sides = sides
+        self._value = 1
+
+    def getSides(self):
+        return self._sides
+
+    def setValue(self, value):
+        if value >= and value <= self.sides:
+        self._value = value
+    def getValue(self):
+        return self._value
+    
+    def roll(self):
+        self._value = randrange(1, self._sides+1)
+
